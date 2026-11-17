@@ -56,6 +56,12 @@ except ClientError:
 print("\n[3/4] กำลังลบ Amazon Cognito User Pool...")
 for p in cognito.list_user_pools(MaxResults=50).get("UserPools", []):
     if p["Name"] == USER_POOL_NAME:
+        pool_info = cognito.describe_user_pool(UserPoolId=p["Id"])["UserPool"]
+        if "Domain" in pool_info:
+            cognito.delete_user_pool_domain(Domain=pool_info["Domain"], UserPoolId=p["Id"])
+            time.sleep(2)
+        if pool_info.get("DeletionProtection") == "ACTIVE":
+            cognito.update_user_pool(UserPoolId=p["Id"], DeletionProtection="INACTIVE")
         cognito.delete_user_pool(UserPoolId=p["Id"])
         print(f"  ✅ ลบ {USER_POOL_NAME} ({p['Id']}) สำเร็จ")
 
