@@ -1,0 +1,6 @@
+window.__AWS_CONFIG__ = {
+  VITE_AWS_REGION: "us-east-1",
+  VITE_COGNITO_USER_POOL_ID: "",
+  VITE_COGNITO_CLIENT_ID: "",
+  VITE_API_BASE_URL: ""
+};

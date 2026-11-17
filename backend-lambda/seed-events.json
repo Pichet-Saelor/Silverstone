@@ -1,0 +1,29 @@
+[
+  {
+    "event_id": "EVT-2026-01",
+    "title": "Silverstone Music Fest 2026: Daylight Arena",
+    "date": "2026-12-15 18:00",
+    "venue": "Bangkok University, Building C2",
+    "price": 499,
+    "available_tickets": 120,
+    "poster_url": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "event_id": "EVT-2026-02",
+    "title": "AWS Cloud Summit & Hackathon Day",
+    "date": "2026-12-20 13:00",
+    "venue": "Bangkok University, Diamond Hall",
+    "price": 250,
+    "available_tickets": 80,
+    "poster_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "event_id": "EVT-2026-03",
+    "title": "Silverstone Indie Night & Art Market",
+    "date": "2026-12-27 17:30",
+    "venue": "Bangkok University , Imagine Lounge",
+    "price": 350,
+    "available_tickets": 60,
+    "poster_url": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80"
+  }
+]
